@@ -1,6 +1,6 @@
-RSpec.describe ExogressConfig do
+RSpec.describe ExogressCommon do
   it "has a version number" do
-    expect(ExogressConfig::VERSION).not_to be nil
+    expect(ExogressCommon::VERSION).not_to be nil
   end
 
   it "raises exception on error" do

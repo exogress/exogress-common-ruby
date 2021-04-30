@@ -2,7 +2,7 @@ require_relative 'lib/exogress_/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "exogress_common"
-  spec.version       = ExogressConfig::VERSION
+  spec.version       = ExogressCommon::VERSION
   spec.authors       = ["Exogress Team"]
   spec.email         = ["team@exogress.com"]
 
