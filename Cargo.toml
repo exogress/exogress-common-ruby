@@ -1,0 +1,18 @@
+[package]
+name = "exogress-common-ruby"
+version = "0.1.0"
+authors = ["Exogress Team <team@exogress.com>"]
+edition = "2018"
+license = "Apache 2.0"
+
+[dependencies]
+rutie = {version="0.8", features=["no-link"]}
+exogress-common = { git = "https://github.com/exogress/exogress.git", branch = "master", version = "0.0.1-beta", features = ["config-core", "entities", "access-tokens"], default-features = false }
+serde = { version = "1.0.105", features = ["derive"] }
+serde_yaml = "0.8.12"
+serde_json = "1.0.61"
+lazy_static = "1.4.0"
+
+[lib]
+name = "exogress_common"
+crate-type = ["cdylib"]
