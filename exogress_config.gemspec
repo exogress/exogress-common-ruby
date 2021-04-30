@@ -1,4 +1,4 @@
-require_relative 'lib/exogress_/version'
+require_relative 'lib/exogress_common/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "exogress_common"
