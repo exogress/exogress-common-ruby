@@ -1,6 +1,9 @@
 require "exogress_common/version"
 require 'rutie'
 
+class JwtException < StandardError
+end
+
 class EntityException < StandardError
 end
 

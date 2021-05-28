@@ -53,5 +53,6 @@ pub extern "C" fn Init_exogress_common() {
     Class::new("Jwt", Some(&data_class)).define(|itself| {
         itself.def_self("generate_access_key_pair", jwt::generate_access_key_pair);
         itself.def_self("validate_jwt_token", jwt::validate_jwt_token);
+        itself.def_self("generate_jwt_token", jwt::generate_jwt_token);
     });
 }

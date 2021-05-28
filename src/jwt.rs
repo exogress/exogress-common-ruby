@@ -8,6 +8,29 @@ methods!(
     Jwt,
     _rtself,
 
+    fn generate_jwt_token(secret_access_key: RString, access_key_id: RString) -> RString {
+        let secret_access_key = secret_access_key.map_err(|e| VM::raise_ex(e)).unwrap().to_string();
+        let access_key_id = access_key_id
+            .map_err(|e| VM::raise_ex(e))
+            .unwrap()
+            .to_string()
+            .parse::<AccessKeyId>()
+            .map_err(|e| {
+                let exception = AnyException::new("EntityException", Some(e.to_string().as_str()));
+                VM::raise_ex(exception);
+            })
+            .unwrap();
+
+        match access_tokens::generate_jwt_token(&secret_access_key, &access_key_id) {
+            Ok(r) => r.into(),
+            Err(e) => {
+                let exception = AnyException::new("JwtException", Some(e.to_string().as_str()));
+                VM::raise_ex(exception);
+                unreachable!()
+            }
+        }
+    }
+
     fn generate_access_key_pair() -> Hash {
         let key_pair = access_tokens::generate_access_key_pair();
 
