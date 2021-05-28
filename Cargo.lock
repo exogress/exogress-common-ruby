@@ -285,7 +285,7 @@ dependencies = [
  "humantime-serde",
  "include_dir",
  "jsonwebtoken",
- "language-tags 0.3.1",
+ "language-tags",
  "lazy_static",
  "maplit",
  "mime",
@@ -575,12 +575,6 @@ checksum = "d4345964bb142484797b161f473a503a434de77149dd8c7427788c6e13379388"
 dependencies = [
  "serde",
 ]
-
-[[package]]
-name = "language-tags"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d4345964bb142484797b161f473a503a434de77149dd8c7427788c6e13379388"
 
 [[package]]
 name = "lazy_static"
@@ -1150,7 +1144,7 @@ source = "git+https://github.com/glebpom/schemars.git?branch=exogress#78bdb41c14
 dependencies = [
  "chrono",
  "dyn-clone",
- "language-tags 0.3.2",
+ "language-tags",
  "schemars_derive",
  "semver 0.11.0",
  "serde",
