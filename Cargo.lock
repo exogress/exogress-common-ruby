@@ -272,7 +272,7 @@ dependencies = [
 [[package]]
 name = "exogress-common"
 version = "0.2.0-beta.1"
-source = "git+https://github.com/exogress/exogress.git?branch=master#b53021ddad8f9326ee6c083fff837a6e360c8964"
+source = "git+https://github.com/exogress/exogress.git?branch=master#b8931aa94be5f6fc6cb8e9b8e7c82fe4682f10c9"
 dependencies = [
  "anyhow",
  "bs58",
@@ -569,8 +569,9 @@ dependencies = [
 
 [[package]]
 name = "language-tags"
-version = "0.3.1"
-source = "git+https://github.com/glebpom/rust-language-tags.git#81f35e1a87bec64e0bc052bd9fbab9f5cc625caa"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d4345964bb142484797b161f473a503a434de77149dd8c7427788c6e13379388"
 dependencies = [
  "serde",
 ]
