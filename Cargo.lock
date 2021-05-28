@@ -272,7 +272,7 @@ dependencies = [
 [[package]]
 name = "exogress-common"
 version = "0.2.0-beta.1"
-source = "git+https://github.com/exogress/exogress.git?branch=master#b6b5cff50a8412230a5a29bc10b6f1ad9c99646f"
+source = "git+https://github.com/exogress/exogress.git?branch=master#de1dd19efa70343679af117876bfdfc5f98bfd7f"
 dependencies = [
  "anyhow",
  "bs58",
